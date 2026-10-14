@@ -21,7 +21,7 @@ except:
     API_KEY = os.getenv("GEMINI_API_KEY")
 
 client = genai.Client(api_key=API_KEY)
-MODEL = "gemini-2.0-flash"
+MODEL = "gemini-3.5-flash-lite"
 
 # --- MONITORING SETUP ---
 if "total_queries" not in st.session_state:
